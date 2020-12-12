@@ -9,7 +9,7 @@ abstract class Entity
      * Entity constructor.
      * @param array $datas values to assign to the corresponding attributes.
      */
-    public function __construct(array $datas)
+    public function __construct(array $datas = [])
     {
         if (!empty($datas)) {
             $this->hydrate($datas);
@@ -18,7 +18,7 @@ abstract class Entity
 
     /**
      * Assigns the specified values to the corresponding attributes.
-     * @param array $datas values to assign 
+     * @param array $datas values to assign
      */
     public function hydrate(array $datas): void
     {

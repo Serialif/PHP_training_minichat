@@ -5,7 +5,7 @@ class DBFactory
 {
     public static function getMysqlConnexionWithPDO()
     {
-        return new PDO('mysql:host=localhost;dbname=training',
+        return new PDO('mysql:host=localhost;dbname=training;charset=utf8mb4',
             'root', 'root',
             [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
     }

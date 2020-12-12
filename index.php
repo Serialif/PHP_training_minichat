@@ -11,3 +11,5 @@ DBFactory::createTableIfNotExistsWithPDO();
 
 $pdo = DBFactory::getMysqlConnexionWithPDO();
 
+$manager = new MessageManagerPDO($pdo);
+
