@@ -8,4 +8,11 @@
   * Abstract class (Entity, Manager)
   * Static methods
   
+### Practice of CSS to use
+  * :hover
+  * :visited
+  * :nth-child() 
+  * transition
+  * transform
+  
   
