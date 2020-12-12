@@ -15,8 +15,8 @@ class DBFactory
         $query = DBFactory::getMysqlConnexionWithPDO()->query('CREATE TABLE IF NOT EXISTS message
             (
                 id         int(10) unsigned NOT NULL AUTO_INCREMENT,
-                author     varchar(30)      NOT NULL,
-                message    varchar(100)     NOT NULL,
+                pseudo     varchar(30)      NOT NULL,
+                content    varchar(100)     NOT NULL,
                 createdAt  datetime         NOT NULL,
                 PRIMARY KEY (id)
             ) DEFAULT CHARSET = utf8mb4;');

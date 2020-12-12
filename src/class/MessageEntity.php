@@ -3,45 +3,45 @@
 
 class MessageEntity extends Entity
 {
-    private string $author;
-    private string $message;
+    private string $pseudo;
+    private string $content;
     private string $createdAt;
 
     public function isValid(): bool
     {
-        return !(empty($this->author) || empty($this->message));
+        return !(empty($this->pseudo) || empty($this->content) || $this->pseudo === '' || $this->content === '');
     }
 
     /**
      * @return string
      */
-    public function getAuthor(): string
+    public function getPseudo(): string
     {
-        return $this->author;
+        return $this->pseudo;
     }
 
     /**
-     * @param string $author
+     * @param string $pseudo
      */
-    public function setAuthor(string $author): void
+    public function setPseudo(string $pseudo): void
     {
-        $this->author = $author;
+        $this->pseudo = $pseudo;
     }
 
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getContent(): string
     {
-        return $this->message;
+        return $this->content;
     }
 
     /**
-     * @param string $message
+     * @param string $content
      */
-    public function setMessage(string $message): void
+    public function setContent(string $content): void
     {
-        $this->message = $message;
+        $this->content = $content;
     }
 
     /**

@@ -1,0 +1,233 @@
+/*
+	Standard CSS Reset
+	This is used to account for differences in browsers.
+	Without a reset stylesheet there could be differences
+	between browsers when loading your html website.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Start styles */
+body {
+    font-family: sans-serif;
+    background: #c1d4d0;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+    text-shadow: 2px 2px 4px #00000088;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.messages {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.counter{
+    margin: 15px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #00000088;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 4px #00000088;
+    border-radius: 10px;
+    transition: all 0.1s;
+    font-weight: 600;
+}
+
+.buttons a:nth-child(1),
+.buttons a:visited:nth-child(1){
+    color: #006c00;
+    background: #fff;
+}
+
+.buttons a:nth-child(2),
+.buttons a:visited:nth-child(2){
+    color: #c10000;
+    background: #fff;
+}
+
+.buttons a:nth-child(1):hover {
+    color: #fff;
+    background: #006c00;
+}
+
+.buttons a:nth-child(2):hover {
+    color: #fff;
+    background: #c10000;
+}
+
+
+.message {
+    background: #ffffff;
+    color: #000000;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px #00000088;
+    border-radius: 10px;
+}
+
+.form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #404746;
+    background: #9fafab;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px #00000088;
+    border-radius: 10px;
+}
+
+.form-title {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-fields label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-fields input{
+    border: 1px solid #999999;
+    border-radius: 10px;
+    margin: 5px 0 10px 0;
+    padding: 10px 15px;
+}
+
+.form-fields textarea{
+    border: 1px solid #999999;
+    border-radius: 10px;
+    margin: 5px 0 10px 0;
+}
+
+.form-fields button {
+    border-radius: 10px;
+    border: 0;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 4px #00000088;
+    text-decoration: none;
+    transition: all 0.1s;
+    font-weight: 600;
+    color: #404746;
+    background: #c1d4d0;
+}
+
+.form-fields button:hover{
+    cursor: pointer;
+    color: #c1d4d0;
+    background: #404746;
+}
+
+form input {
+    margin: 10px;
+}
+
+.message{
+    transition: all 0.3s;
+}
+
+.message:hover{
+    transform: scale(1.2);
+}
+
+.pseudo {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-bottom: 10px;
+}
+
+.created-at {
+    text-align: right;
+    font-size: 0.8em;
+    color: #828282;
+}

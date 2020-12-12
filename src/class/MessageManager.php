@@ -4,10 +4,12 @@
 abstract class MessageManager
 {
     public function save(MessageEntity $message){
-        if($message->isExist()){
-            $this->update($message);
-        }else{
-            $this->add($message);
+        if ($message->isValid()) {
+            if ($message->isExist()) {
+                $this->update($message);
+            } else {
+                $this->add($message);
+            }
         }
     }
 
