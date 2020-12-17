@@ -7,6 +7,7 @@
   * Abstract class (Entity, Manager)
   * Static methods
   * spl_autoload_register
+  * htmlentities
   
 ### Practice of CSS to use
   * :hover
