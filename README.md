@@ -6,6 +6,7 @@
   * Databases with PDO
   * Abstract class (Entity, Manager)
   * Static methods
+  * spl_autoload_register
   
 ### Practice of CSS to use
   * :hover

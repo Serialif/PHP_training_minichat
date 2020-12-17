@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
 /*
 	Standard CSS Reset
 	This is used to account for differences in browsers.
@@ -56,9 +58,11 @@ table {
 }
 
 /* Start styles */
+
 body {
-    font-family: sans-serif;
+    font-family: 'Teko', sans-serif;
     background: #c1d4d0;
+    font-size: 20px;
 }
 
 h1 {
@@ -138,7 +142,7 @@ main {
     color: #000000;
     width: 100%;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 2px 2px 4px #00000088;
     border-radius: 10px;
 }
@@ -224,10 +228,26 @@ form input {
 
 .content {
     margin-bottom: 10px;
+    word-break: break-word;
+    padding-left: 10px;
 }
 
 .created-at {
     text-align: right;
     font-size: 0.8em;
     color: #828282;
+}
+
+.error{
+    margin-top: 20px;
+    color: #c10000;
+    text-align: center;
+    font-weight: 600;
+}
+
+.warning{
+    margin-top: 20px;
+    color: #c16a00;
+    text-align: center;
+    font-weight: 600;
 }
