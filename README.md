@@ -8,6 +8,7 @@
   * Static methods
   * spl_autoload_register
   * htmlentities
+  * Create mini personal Captcha
   
 ### Practice of CSS to use
   * :hover
@@ -15,5 +16,9 @@
   * :nth-child() 
   * transition
   * transform
+
+### Practice of Javascript
+  * getElementsByClassName
+  * addEventListener
   
   
