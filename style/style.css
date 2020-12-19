@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
 
 /*
 	Standard CSS Reset
@@ -60,9 +60,9 @@ table {
 /* Start styles */
 
 body {
-    font-family: 'Teko', sans-serif;
+    font-family: 'Sniglet', cursive;
     background: #c1d4d0;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 h1 {
@@ -84,7 +84,7 @@ main {
 }
 
 .messages {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -107,11 +107,13 @@ main {
 
 .buttons a {
     text-decoration: none;
+    margin: 0 10px;
     padding: 10px 15px;
     box-shadow: 2px 2px 4px #00000088;
     border-radius: 10px;
     transition: all 0.1s;
     font-weight: 600;
+    text-align: center;
 }
 
 .buttons a:nth-child(1),
@@ -145,10 +147,15 @@ main {
     padding: 20px;
     box-shadow: 2px 2px 4px #00000088;
     border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.message:hover{
+    transform: scale(1.2);
 }
 
 .form {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,12 +190,14 @@ main {
     border-radius: 10px;
     margin: 5px 0 10px 0;
     padding: 10px 15px;
+    width: 50%;
 }
 
 .form-fields textarea{
     border: 1px solid #999999;
     border-radius: 10px;
     margin: 5px 0 10px 0;
+    width: 80%;
 }
 
 .form-fields button {
@@ -209,16 +218,19 @@ main {
     background: #404746;
 }
 
+.form-fields .captcha-word{
+    color: #9fafab;
+    background: #404746;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+
+.form-fields .form-char-number{
+    font-size: 0.8em;
+}
+
 form input {
     margin: 10px;
-}
-
-.message{
-    transition: all 0.3s;
-}
-
-.message:hover{
-    transform: scale(1.2);
 }
 
 .pseudo {
@@ -239,15 +251,22 @@ form input {
 }
 
 .error{
-    margin-top: 20px;
+    margin-top: 5px;
     color: #c10000;
     text-align: center;
     font-weight: 600;
 }
 
 .warning{
-    margin-top: 20px;
+    margin-top: 5px;
     color: #c16a00;
+    text-align: center;
+    font-weight: 600;
+}
+
+.success{
+    margin-top: 5px;
+    color: #41ac00;
     text-align: center;
     font-weight: 600;
 }
